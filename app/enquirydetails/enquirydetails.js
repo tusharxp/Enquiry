@@ -23,9 +23,9 @@ export default function enquirydetails(props) {
 
   return (
     <div>
-      
+      {/* <Link href="/flighthotelcard"><ChevronLeftIcon className="h-4 text-black" /></Link> */}
       <span className="flex items-center mb-4">
-        <ChevronLeftIcon className="h-4 text-black" />
+      <ChevronLeftIcon className="h-4 text-black" />
         <h1 className="pl-2 text-lg font-semibold">Enquiry Details</h1>
       </span>
 
