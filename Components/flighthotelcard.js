@@ -6,6 +6,7 @@ import {
   PaperAirplaneIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function flighthotelcard(props) {
   const {
@@ -26,7 +27,9 @@ export default function flighthotelcard(props) {
   } = props;
 
   return (
-    <div className="flex flex-wrap my-2">
+    
+    <div className="flex flex-wrap my-2 cursor-pointer">
+      <Link href="/enquirydetails">
       {/* Flight */}
       <div className="items-center p-2 m-2 border-2 border-red-100 rounded-md bg-red-50 ">
         <p className="flex items-center justify-between mb-2 text-xs text-zinc-600">
@@ -74,6 +77,7 @@ export default function flighthotelcard(props) {
           </span>
         </div>
       </div>
+      </Link>
 
       {/* Hotel */}
       <div className="items-center p-2 m-2 border-2 rounded-md border-violet-100 bg-violet-50">
@@ -117,5 +121,6 @@ export default function flighthotelcard(props) {
         </div>
       </div>
     </div>
+    
   );
 }

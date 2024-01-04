@@ -7,7 +7,8 @@ import {
   PaperAirplaneIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Quotes from "./quotes";
+import Quotes from "@/Components/quotes";
+import Link from "next/link";
 
 export default function enquirydetails(props) {
   const {
@@ -22,6 +23,7 @@ export default function enquirydetails(props) {
 
   return (
     <div>
+      
       <span className="flex items-center mb-4">
         <ChevronLeftIcon className="h-4 text-black" />
         <h1 className="pl-2 text-lg font-semibold">Enquiry Details</h1>
