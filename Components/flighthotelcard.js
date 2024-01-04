@@ -8,7 +8,22 @@ import {
 import Image from "next/image";
 
 export default function flighthotelcard(props) {
-  const {ticketNmbr, departure, destination, bookingDate, deportDate, arrival, passengers, hotelBookingNmbr, city, nmbrOfRooms, hotelBookingDate, hotelCheckIn, hotelDeport, guest } = props;
+  const {
+    ticketNmbr,
+    departure,
+    destination,
+    bookingDate,
+    deportDate,
+    arrival,
+    passengers,
+    hotelBookingNmbr,
+    city,
+    nmbrOfRooms,
+    hotelBookingDate,
+    hotelCheckIn,
+    hotelDeport,
+    guest,
+  } = props;
 
   return (
     <div className="flex flex-wrap my-2">
@@ -93,7 +108,7 @@ export default function flighthotelcard(props) {
           </span>
           <span>
             <p className="py-1 text-xs text-neutral-400">Arrive</p>
-          <p className="text-xs font-semibold">{hotelCheckIn}</p>
+            <p className="text-xs font-semibold">{hotelCheckIn}</p>
           </span>
           <span>
             <p className="py-1 text-xs text-neutral-400">Guest</p>
