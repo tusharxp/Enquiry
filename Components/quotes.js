@@ -2,7 +2,22 @@ import React from "react";
 import Image from "next/image";
 
 export default function quotes(props) {
-    const {totalPrice, totalDiscount, price, flightName, departingFrom, departingCity, departingTime, departingDate, flightClass, arriveAt, arrivedCity, arrivingTime, arrivingDate, flightDuration } = props;
+  const {
+    totalPrice,
+    totalDiscount,
+    price,
+    flightName,
+    departingFrom,
+    departingCity,
+    departingTime,
+    departingDate,
+    flightClass,
+    arriveAt,
+    arrivedCity,
+    arrivingTime,
+    arrivingDate,
+    flightDuration,
+  } = props;
 
   return (
     <div>
@@ -20,15 +35,15 @@ export default function quotes(props) {
             <p className="text-[0.5rem] text-gray-400">{departingDate}</p>
           </span>
           <span className="items-center text-center">
-          <p className="text-xs font-semibold">
-          <Image
-              className="items-center pt-10 pl-10"
-              src="https://images.travelxp.com/images/txpin/voucher/flights/flight_voucher_fromandto.png"
-              height="10"
-              width="100"
-              alt="flight image"
-            />
-            {flightDuration}
+            <p className="text-xs font-semibold">
+              <Image
+                className="items-center pt-10 pl-10"
+                src="https://images.travelxp.com/images/txpin/voucher/flights/flight_voucher_fromandto.png"
+                height="10"
+                width="100"
+                alt="flight image"
+              />
+              {flightDuration}
             </p>
           </span>
           <span className="text-right">
@@ -86,7 +101,8 @@ export default function quotes(props) {
               Price Per Adult<span>{price}</span>
             </p>
             <p className="flex justify-between my-1 text-xs font-semibold">
-              Total Discount<span className="text-green-400">{totalDiscount}</span>
+              Total Discount
+              <span className="text-green-400">{totalDiscount}</span>
             </p>
             <hr className="my-2 border-gray-200" />
             <p className="flex justify-between text-xs font-semibold">
