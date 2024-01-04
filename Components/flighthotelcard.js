@@ -28,7 +28,7 @@ export default function flighthotelcard(props) {
   return (
     <div className="flex flex-wrap my-2">
       {/* Flight */}
-      <div className="items-center p-2 m-2 border-2 border-red-100 rounded-md w-80 lg:w-96 bg-red-50 ">
+      <div className="items-center p-2 m-2 border-2 border-red-100 rounded-md bg-red-50 ">
         <p className="flex items-center justify-between mb-2 text-xs text-zinc-600">
           Ticket No.- {ticketNmbr}
           <span className="items-center px-2 text-xs text-white bg-orange-400 rounded-sm">
@@ -76,7 +76,7 @@ export default function flighthotelcard(props) {
       </div>
 
       {/* Hotel */}
-      <div className="items-center p-2 m-2 border-2 rounded-md border-violet-100 w-80 lg:w-96 bg-violet-50">
+      <div className="items-center p-2 m-2 border-2 rounded-md border-violet-100 bg-violet-50">
         <p className="flex items-center justify-between mb-2 text-xs text-zinc-600">
           Ticket No.- {hotelBookingNmbr}
           <span className="items-center px-2 text-xs text-white rounded-sm bg-violet-500">

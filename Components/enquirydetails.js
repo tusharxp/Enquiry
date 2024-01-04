@@ -85,9 +85,9 @@ export default function enquirydetails(props) {
       <h1 className="pl-2 mt-6 mb-1 text-lg font-semibold text-gray-400">
         Quotes
       </h1>
-      <div className="flex flex-wrap">
-        <Quotes />
-        <Quotes />
+      <div className="flex flex-wrap lg:flex-nowrap">
+        <Quotes flightName={'spice jet'} departingFrom={'BOM'} departingCity={'Mumbai, India'}  departingTime={'06:05'} departingDate={'Tue 19 feb, 22'} flightClass={'Economy'} arriveAt={'DEL'} arrivedCity={'Delhi, India'} arrivingTime={'09:35'} arrivingDate={'Tue 19 feb, 22'} price={'₹ 14,000'} totalDiscount={'-₹ 1,500'} totalPrice={'₹ 14,000'} flightDuration={'3hrs 30mins'} />
+        <Quotes flightName={'spice jet'} departingFrom={'BOM'} departingCity={'Mumbai, India'}  departingTime={'06:05'} departingDate={'Tue 19 feb, 22'} flightClass={'Economy'} arriveAt={'DEL'} arrivedCity={'Delhi, India'} arrivingTime={'09:35'} arrivingDate={'Tue 19 feb, 22'} price={'₹ 14,000'} totalDiscount={'-₹ 1,500'} totalPrice={'₹ 14,000'} flightDuration={'3hrs 30mins'} />
       </div>
     </div>
   );

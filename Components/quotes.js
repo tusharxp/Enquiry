@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-export default function quotes() {
+export default function quotes(props) {
+    const {totalPrice, totalDiscount, price, flightName, departingFrom, departingCity, departingTime, departingDate, flightClass, arriveAt, arrivedCity, arrivingTime, arrivingDate, flightDuration } = props;
+
   return (
     <div>
       <div className="p-2 m-2 border rounded-md">
@@ -11,19 +13,30 @@ export default function quotes() {
         <hr className="m-2 border-gray-200" />
         <span className="grid justify-around grid-cols-3">
           <span className="text-left">
-            <p className="mb-2 text-xs">spice jet</p>
-            <p className="text-sm font-semibold ">BOM</p>
-            <p className="text-[0.5rem] text-gray-400">Mumbai, India</p>
-            <p className="font-semibold ">06:05</p>
-            <p className="text-[0.5rem] text-gray-400">Tue 19 feb, 22</p>
+            <p className="mb-2 text-xs">{flightName}</p>
+            <p className="text-sm font-semibold ">{departingFrom}</p>
+            <p className="text-[0.5rem] text-gray-400">{departingCity}</p>
+            <p className="font-semibold ">{departingTime}</p>
+            <p className="text-[0.5rem] text-gray-400">{departingDate}</p>
           </span>
-          <span className="items-center text-center"></span>
+          <span className="items-center text-center">
+          <p className="text-xs font-semibold">
+          <Image
+              className="items-center pt-10 pl-10"
+              src="https://images.travelxp.com/images/txpin/voucher/flights/flight_voucher_fromandto.png"
+              height="10"
+              width="100"
+              alt="flight image"
+            />
+            {flightDuration}
+            </p>
+          </span>
           <span className="text-right">
-            <p className="mb-2 text-xs">Economy</p>
-            <p className="text-sm font-semibold ">DEL</p>
-            <p className="text-[0.5rem] text-gray-400">Delhi, India</p>
-            <p className="font-semibold ">09:35</p>
-            <p className="text-[0.5rem] text-gray-400">Tue 19 feb, 22</p>
+            <p className="mb-2 text-xs">{flightClass}</p>
+            <p className="text-sm font-semibold ">{arriveAt}</p>
+            <p className="text-[0.5rem] text-gray-400">{arrivedCity}</p>
+            <p className="font-semibold ">{arrivingTime}</p>
+            <p className="text-[0.5rem] text-gray-400">{arrivingDate}</p>
           </span>
         </span>
 
@@ -70,14 +83,14 @@ export default function quotes() {
           </p>
           <span>
             <p className="flex justify-between my-1 text-xs font-semibold">
-              Price Per Adult<span>₹ 14,000</span>
+              Price Per Adult<span>{price}</span>
             </p>
             <p className="flex justify-between my-1 text-xs font-semibold">
-              Total Discount<span className="text-green-400">-₹ 1,500</span>
+              Total Discount<span className="text-green-400">{totalDiscount}</span>
             </p>
             <hr className="my-2 border-gray-200" />
             <p className="flex justify-between text-xs font-semibold">
-              Price Per Adult<span>₹ 14,000</span>
+              Price Per Adult<span>{totalPrice}</span>
             </p>
             <hr className="my-2 border-gray-200" />
             <p className="text-[0.5rem] bg-red-50 p-2 border border-red-100 rounded-md">
@@ -88,7 +101,6 @@ export default function quotes() {
               Accept
             </button>
             <button className="h-8 m-2 text-xs text-center text-orange-400 w-52">
-              {" "}
               Ask for another Quote
             </button>
           </span>
