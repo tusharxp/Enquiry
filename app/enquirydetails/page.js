@@ -2,7 +2,7 @@ import Enquirydetails from "@/app/enquirydetails/enquirydetails";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-between min-h-screen bg-white">
+    <div className="flex flex-col items-end justify-between min-h-screen bg-white">
       <Enquirydetails
         ticketNmbr={"36650"}
         departure={"CCU"}
