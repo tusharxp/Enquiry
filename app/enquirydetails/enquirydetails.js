@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
   ArrowLongRightIcon,
@@ -8,7 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Quotes from "@/Components/quotes";
-// import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
 export default function enquirydetails(props) {
   const {
@@ -21,11 +22,12 @@ export default function enquirydetails(props) {
     passengers,
   } = props;
 
+  const router = useRouter()
+
   return (
     <div>
-      {/* <Link href="/flighthotelcard"><ChevronLeftIcon className="h-4 text-black" /></Link> */}
       <span className="flex items-center justify-center pt-5 pb-4 lg:justify-normal bg-red-50 lg:bg-white">
-      <ChevronLeftIcon className="h-4 text-black" />
+      <ChevronLeftIcon  onClick={() => router.back()} className="h-4 text-black" />
         <h1 className="pl-2 text-lg font-semibold ">Enquiry Details</h1>
       </span>
 
