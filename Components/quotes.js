@@ -37,7 +37,7 @@ export default function quotes(props) {
           <span className="items-center text-center">
             <p className="text-xs font-semibold">
               <Image
-                className="items-center pt-5 lg:pt-10 lg:pl-10"
+                className="items-center pt-5 pb-2 lg:pt-10 lg:pl-10"
                 src="https://images.travelxp.com/images/txpin/voucher/flights/flight_voucher_fromandto.png"
                 height="10"
                 width="100"

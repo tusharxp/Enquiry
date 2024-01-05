@@ -5,7 +5,7 @@ import { ChevronLeftIcon } from "@heroicons/react/24/solid";
 export default function enquirytickets() {
   return (
     <div className="bg-gradient-to-r from-red-50 to-orange-50 lg:from-white lg:to-white">
-      <span className="flex mt-4 mb-6">
+      <span className="flex justify-center mt-4 mb-6 lg:justify-normal">
       <ChevronLeftIcon className="flex w-5 h-6 text-black md:hidden" />
       <h1 className="pl-2 text-lg font-bold tracking-wide ">Enquiry Tickets</h1>
       </span>
