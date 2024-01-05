@@ -64,16 +64,16 @@ export default function flighthotelcard(props) {
             <p className="text-xs font-semibold">{bookingDate}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Deport</p>
-            <p className="text-xs font-semibold">{deportDate}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Deport</p>
+            <p className="pl-2 text-xs font-semibold">{deportDate}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Arrive</p>
-            <p className="text-xs font-semibold">{arrival}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Arrive</p>
+            <p className="pl-2 text-xs font-semibold">{arrival}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Traveller</p>
-            <p className="text-xs font-semibold">{passengers}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Traveller</p>
+            <p className="pl-2 text-xs font-semibold">{passengers}</p>
           </span>
         </div>
       </div>
@@ -107,16 +107,16 @@ export default function flighthotelcard(props) {
             <p className="text-xs font-semibold">{hotelBookingDate}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Deport</p>
-            <p className="text-xs font-semibold">{hotelDeport}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Deport</p>
+            <p className="pl-2 text-xs font-semibold">{hotelDeport}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Arrive</p>
-            <p className="text-xs font-semibold">{hotelCheckIn}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Arrive</p>
+            <p className="pl-2 text-xs font-semibold">{hotelCheckIn}</p>
           </span>
           <span>
-            <p className="py-1 text-xs text-neutral-400">Guest</p>
-            <p className="text-xs font-semibold">{guest}</p>
+            <p className="py-1 pl-2 text-xs text-neutral-400">Guest</p>
+            <p className="pl-2 text-xs font-semibold">{guest}</p>
           </span>
         </div>
       </div>

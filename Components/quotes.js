@@ -113,10 +113,10 @@ export default function quotes(props) {
               This is cheapest option available in indigo for Mumbai to Delhi on
               24th.
             </p>
-            <button className="h-8 m-2 text-xs text-center text-white bg-orange-400 rounded-md w-52">
+            <button className="h-8 my-2 lg:m-2 text-xs text-center text-white bg-orange-400 rounded-md w-[48%] lg:w-52">
               Accept
             </button>
-            <button className="h-8 m-2 text-xs text-center text-orange-400 w-52">
+            <button className="h-8 my-2 pl-2 lg:m-2 text-xs text-center text-orange-400 lg:w-52 w-[45%]">
               Ask for another Quote
             </button>
           </span>
