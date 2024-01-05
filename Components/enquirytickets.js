@@ -10,7 +10,7 @@ export default function enquirytickets() {
       <h1 className="pl-2 text-lg font-bold tracking-wide ">Enquiry Tickets</h1>
       </span>
       
-      <div className="items-center p-4 bg-white rounded-t-3xl md:p-0">
+      <div className="items-center justify-center p-4 bg-white rounded-t-3xl md:p-0">
       <Flighthotelcard
         ticketNmbr={"36650"}
         departure={"CCU"}
@@ -26,6 +26,8 @@ export default function enquirytickets() {
         hotelDeport={"24 dec, 22"}
         hotelCheckIn={"24 dec, 22"}
         guest={"2"}
+        flightStatus={"CURATION"}
+        hotelStatus={"CURATION"}
       />
 
       <Flighthotelcard
@@ -43,6 +45,8 @@ export default function enquirytickets() {
         hotelDeport={"24 dec, 22"}
         hotelCheckIn={"24 dec, 22"}
         guest={"2"}
+        flightStatus={"CURATION"}
+        hotelStatus={"CURATION"}
       />
 
       <Flighthotelcard
@@ -60,6 +64,8 @@ export default function enquirytickets() {
         hotelDeport={"24 dec, 22"}
         hotelCheckIn={"24 dec, 22"}
         guest={"2"}
+        flightStatus={"CURATION"}
+        hotelStatus={"CURATION"}
       />
       </div>
     </div>

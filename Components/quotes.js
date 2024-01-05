@@ -37,7 +37,7 @@ export default function quotes(props) {
           <span className="items-center text-center">
             <p className="text-xs font-semibold">
               <Image
-                className="items-center pt-10 pl-10"
+                className="items-center pt-5 lg:pt-10 lg:pl-10"
                 src="https://images.travelxp.com/images/txpin/voucher/flights/flight_voucher_fromandto.png"
                 height="10"
                 width="100"
@@ -97,10 +97,10 @@ export default function quotes(props) {
             Fee Breakdown
           </p>
           <span>
-            <p className="flex justify-between my-1 text-xs font-semibold">
+            <p className="flex justify-between py-1 my-1 text-xs font-semibold">
               Price Per Adult<span>{price}</span>
             </p>
-            <p className="flex justify-between my-1 text-xs font-semibold">
+            <p className="flex justify-between py-1 my-1 text-xs font-semibold">
               Total Discount
               <span className="text-green-400">{totalDiscount}</span>
             </p>
