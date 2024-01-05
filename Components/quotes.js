@@ -55,7 +55,7 @@ export default function quotes(props) {
           </span>
         </span>
 
-        <span className="flex justify-center">
+        <span className="flex justify-center mt-2">
           <p className="flex px-1 text-[0.5rem] items-center">
             <Image
               className="items-center mx-1"
