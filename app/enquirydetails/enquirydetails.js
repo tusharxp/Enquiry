@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Quotes from "@/Components/quotes";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function enquirydetails(props) {
   const {
@@ -24,12 +24,12 @@ export default function enquirydetails(props) {
   return (
     <div>
       {/* <Link href="/flighthotelcard"><ChevronLeftIcon className="h-4 text-black" /></Link> */}
-      <span className="flex items-center mb-4">
+      <span className="flex items-center pt-5 pb-4 bg-red-50 lg:bg-white">
       <ChevronLeftIcon className="h-4 text-black" />
-        <h1 className="pl-2 text-lg font-semibold">Enquiry Details</h1>
+        <h1 className="pl-2 text-lg font-semibold ">Enquiry Details</h1>
       </span>
 
-      <div className="items-center p-4 m-2 rounded-md bg-red-50 ">
+      <div className="items-center p-4 rounded-md lg:mx-2 bg-red-50 ">
         <p className="flex items-center justify-between mb-2 text-xs text-zinc-600">
           Ticket No.- {ticketNmbr}
           <span className="items-center px-2 text-xs text-white bg-orange-400 rounded-sm">
@@ -56,7 +56,7 @@ export default function enquirydetails(props) {
           </span>
         </div>
 
-        <p className="text-[0.5rem] my-2 leading-loose w-[90%]">
+        <p className="text-[0.7rem] lg:text-[0.5rem] my-2 leading-loose w-[90%]">
           Lorem long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
@@ -67,27 +67,27 @@ export default function enquirydetails(props) {
 
         <div className="grid items-center grid-cols-4 mt-2">
           <span>
-            <p className="py-1 text-[0.5rem] text-neutral-400">Booking Date</p>
+            <p className="py-1 text-[0.7rem] lg:text-[0.5rem] text-neutral-400">Booking Date</p>
             <p className="text-xs font-semibold">{bookingDate}</p>
           </span>
           <span>
-            <p className="py-1 text-[0.5rem] text-neutral-400">Deport</p>
+            <p className="py-1 text-[0.7rem] lg:text-[0.5rem] text-neutral-400">Deport</p>
             <p className="text-xs font-semibold">{deportDate}</p>
           </span>
           <span>
-            <p className="py-1 text-[0.5rem] text-neutral-400">Arrive</p>
+            <p className="py-1 text-[0.7rem] lg:text-[0.5rem] text-neutral-400">Arrive</p>
             <p className="text-xs font-semibold">{arrival}</p>
           </span>
           <span>
-            <p className="py-1 text-[0.5rem] text-neutral-400">Traveller</p>
+            <p className="py-1 text-[0.7rem] lg:text-[0.5rem] text-neutral-400">Traveller</p>
             <p className="text-xs font-semibold">{passengers}</p>
           </span>
         </div>
       </div>
-      <h1 className="pl-2 mt-6 mb-1 text-lg font-semibold text-gray-400">
+      <h1 className="mt-6 mb-1 text-lg font-semibold text-black lg:text-gray-400 lg:pl-2 pl-7">
         Quotes
       </h1>
-      <div className="flex flex-wrap lg:flex-nowrap">
+      <div className="flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap">
         <Quotes
           flightName={"spice jet"}
           departingFrom={"BOM"}

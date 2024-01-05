@@ -109,8 +109,8 @@ export default function quotes(props) {
               Price Per Adult<span>{totalPrice}</span>
             </p>
             <hr className="my-2 border-gray-200" />
-            <p className="text-[0.5rem] bg-red-50 p-2 border border-red-100 rounded-md">
-              This is cheapest option available in indigo for Mumbai to Delhi on
+            <p className="text-[0.5rem] bg-red-50 p-2 border border-red-100 w-[99%] rounded-md">
+            This is cheapest option available in indigo for {departingCity} to {arrivedCity} on
               24th.
             </p>
             <button className="h-8 my-2 lg:m-2 text-xs text-center text-white bg-orange-400 rounded-md w-[48%] lg:w-52">
